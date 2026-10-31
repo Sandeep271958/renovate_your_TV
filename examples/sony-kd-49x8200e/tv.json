@@ -1,0 +1,6 @@
+{
+  "tv": "Sony BRAVIA KD-49X8200E (2017, BRAVIA_ATV2, MediaTek MT5891), India",
+  "os": "Android TV 8/9",
+  "brand": "Sony",
+  "notes": "Configured for Sony BRAVIA KD-49X8200E (MediaTek MT5891, BRAVIA_ATV2 platform). Strips Samba TV ACR, Sony Select, My BRAVIA promos, Discover, device agents, retail demo, and unused preloaded apps. Keeps com.sony.dtv.tvx for HDMI & Live TV switching, HDMI-CEC, and remote pairing. Configured for clean Apple TV-style launcher."
+}

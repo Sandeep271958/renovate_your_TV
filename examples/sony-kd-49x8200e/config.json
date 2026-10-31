@@ -1,0 +1,17 @@
+{
+  "dock_apps": [
+    "com.netflix.ninja",
+    "com.google.android.youtube.tv",
+    "com.amazon.amazonvideo.livingroom",
+    "in.startv.hotstar"
+  ],
+  "hidden_apps": [
+    "com.sony.dtv.tvx",
+    "com.sony.dtv.tvxlauncher.programguide"
+  ],
+  "live_tv_package": "com.sony.dtv.tvx",
+  "app_keys": [
+    "scan:485:com.google.android.youtube.tv",
+    "scan:490:com.amazon.amazonvideo.livingroom"
+  ]
+}

@@ -27,6 +27,26 @@
   <a href="docs/PRESS.md"><img src="docs/card-halloween.jpg" alt="380 TV models · 101 brands · 31 languages · 572 KB launcher. Featured in TechCrunch, TechRadar, Tom's Guide, Mashable, Android Authority, XDA, FlatpanelsHD, It's FOSS, Phandroid, GIGAZINE, Xataka, WinFuture, Frandroid, Macitynet, Techaeris, TechPP and 335 more: 351 articles from 46 countries. Before: stock Google TV home with a sponsored ad. After: the Clean Your TV launcher." width="800"></a>
 </p>
 
+---
+
+## 📺 Renovate Your TV — Sony Bravia KD-49X8200E Edition
+
+> This repository is a fork of [Gathin23/cleanyourtv](https://github.com/Gathin23/cleanyourtv), customized and pre-configured specifically for the **Sony Bravia KD-49X8200E** (2017, Android TV, MediaTek MT5891, BRAVIA_ATV2 platform).
+
+### 🚀 1-Step Renovate for Sony Bravia KD-49X8200E
+
+```bash
+# 1. On TV: Settings → Device Preferences → Developer options → turn USB debugging ON
+# 2. On Laptop (connected to same Wi-Fi, e.g. Jio Fiber):
+./renovate_sony_bravia.sh 192.168.29.XXX
+```
+
+📖 **Detailed step-by-step guide with explanations:** [docs/SONY_KD-49X8200E_GUIDE.md](docs/SONY_KD-49X8200E_GUIDE.md)  
+📋 **Debloat list:** [examples/sony-kd-49x8200e/debloat.txt](examples/sony-kd-49x8200e/debloat.txt)  
+⚙️ **Config:** [examples/sony-kd-49x8200e/config.json](examples/sony-kd-49x8200e/config.json)
+
+---
+
 ## Start here
 
 | You have | Go to |
