@@ -34,7 +34,7 @@
 | **RAM** | 2 GB |
 | **Stock launcher** | `com.google.android.tvlauncher` or `com.google.android.leanbacklauncher` |
 | **Input app** | `com.sony.dtv.tvx` (handles HDMI + Live TV) |
-| **Closest tested models in repo** | [sony-xbr-x900e](file:///Users/mouryasaisandeep/Desktop/Projects/renovate_your_TV/cleanyourtv/examples/sony-xbr-x900e/debloat.txt), [sony-kd-55xe8596](file:///Users/mouryasaisandeep/Desktop/Projects/renovate_your_TV/cleanyourtv/examples/sony-kd-55xe8596/debloat.txt) — same generation Sony BRAVIA_ATV2 platform |
+| **Closest tested models in repo** | Sony XBR-X900E, Sony KD-55XE8596 — same generation Sony BRAVIA_ATV2 platform |
 
 > [!NOTE]
 > Your KD-49X8200E is the same BRAVIA_ATV2 / MediaTek platform as the tested Sony XBR-X900E and KD-55XE8596. The bloatware packages will be nearly identical. The debloat list below is based on those tested lists, but the AI assistant will **discover and verify** the exact packages on your TV.
@@ -280,7 +280,7 @@ tools/venv/bin/python -I tools/tv.py --screenshot shots/01-after-debloat.png
 
 ### Step 1: Customize `config.xml` for Your TV
 
-Edit [config.xml](file:///Users/mouryasaisandeep/Desktop/Projects/renovate_your_TV/cleanyourtv/launcher/app/src/main/res/values/config.xml) to match your apps. Here's what to change:
+Edit [`config.xml`](../launcher/app/src/main/res/values/config.xml) to match your apps. Here's what to change:
 
 ```xml
 <!-- Dock apps — YOUR favorites, in order left to right -->
@@ -509,18 +509,17 @@ TV_HOST=192.168.29.XXX tools/venv/bin/python -I tools/check.py --fix examples/so
 
 | File | Purpose |
 |---|---|
-| [PROMPT.md](file:///Users/mouryasaisandeep/Desktop/Projects/renovate_your_TV/cleanyourtv/PROMPT.md) | The master prompt — paste this into a coding assistant for the AI-guided flow |
-| [tools/tv.py](file:///Users/mouryasaisandeep/Desktop/Projects/renovate_your_TV/cleanyourtv/tools/tv.py) | Pure-Python ADB client (works where stock `adb` is blocked) |
-| [tools/disable.sh](file:///Users/mouryasaisandeep/Desktop/Projects/renovate_your_TV/cleanyourtv/tools/disable.sh) | Apply a debloat list with ALL safety checks |
-| [tools/restore.sh](file:///Users/mouryasaisandeep/Desktop/Projects/renovate_your_TV/cleanyourtv/tools/restore.sh) | Undo everything |
-| [tools/check.py](file:///Users/mouryasaisandeep/Desktop/Projects/renovate_your_TV/cleanyourtv/tools/check.py) | Check what a firmware update undid |
-| [tools/adb-closed.py](file:///Users/mouryasaisandeep/Desktop/Projects/renovate_your_TV/cleanyourtv/tools/adb-closed.py) | Verify ADB port is closed |
-| [tools/theme.sh](file:///Users/mouryasaisandeep/Desktop/Projects/renovate_your_TV/cleanyourtv/tools/theme.sh) | Push a theme without rebuilding |
-| [launcher/build-and-install.sh](file:///Users/mouryasaisandeep/Desktop/Projects/renovate_your_TV/cleanyourtv/launcher/build-and-install.sh) | Build & install the launcher APK |
-| [launcher/.../config.xml](file:///Users/mouryasaisandeep/Desktop/Projects/renovate_your_TV/cleanyourtv/launcher/app/src/main/res/values/config.xml) | **The only file you edit** — dock apps, columns, Live TV app |
-| [examples/sony-xbr-x900e/debloat.txt](file:///Users/mouryasaisandeep/Desktop/Projects/renovate_your_TV/cleanyourtv/examples/sony-xbr-x900e/debloat.txt) | Reference debloat list (same Sony platform) |
-| [examples/sony-kd-55xe8596/debloat.txt](file:///Users/mouryasaisandeep/Desktop/Projects/renovate_your_TV/cleanyourtv/examples/sony-kd-55xe8596/debloat.txt) | Another reference list (same platform, UK model) |
-| [docs/REMOTE.md](file:///Users/mouryasaisandeep/Desktop/Projects/renovate_your_TV/cleanyourtv/docs/REMOTE.md) | Remote access via Tailscale (if you wanted to do this from IITM) |
+| [`PROMPT.md`](../PROMPT.md) | The master prompt — paste this into a coding assistant for the AI-guided flow |
+| [`tools/tv.py`](../tools/tv.py) | Pure-Python ADB client (works where stock `adb` is blocked) |
+| [`tools/disable.sh`](../tools/disable.sh) | Apply a debloat list with ALL safety checks |
+| [`tools/restore.sh`](../tools/restore.sh) | Undo everything |
+| [`tools/check.py`](../tools/check.py) | Check what a firmware update undid |
+| [`tools/adb-closed.py`](../tools/adb-closed.py) | Verify ADB port is closed |
+| [`tools/theme.sh`](../tools/theme.sh) | Push a theme without rebuilding |
+| [`launcher/build-and-install.sh`](../launcher/build-and-install.sh) | Build & install the launcher APK |
+| [`launcher/.../config.xml`](../launcher/app/src/main/res/values/config.xml) | **The only file you edit** — dock apps, columns, Live TV app |
+| [`examples/sony-kd-49x8200e/debloat.txt`](../examples/sony-kd-49x8200e/debloat.txt) | Tailored debloat list for your TV |
+| [`docs/REMOTE.md`](REMOTE.md) | Remote access via Tailscale |
 
 ---
 
@@ -585,7 +584,7 @@ Instead of running each command manually, you can let an AI coding assistant do 
 
 1. Open Antigravity CLI / Claude Code / Gemini CLI on your MacBook
 2. `cd ~/Desktop/Projects/renovate_your_TV/cleanyourtv`
-3. Paste the contents of [PROMPT.md](file:///Users/mouryasaisandeep/Desktop/Projects/renovate_your_TV/cleanyourtv/PROMPT.md) and replace `<MODEL NAME HERE>` with:
+3. Paste the contents of [`PROMPT.md`](../PROMPT.md) and replace `<MODEL NAME HERE>` with:
 
 > **Sony Bravia KD-49X8200E**
 

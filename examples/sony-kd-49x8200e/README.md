@@ -29,3 +29,4 @@ TV_HOST=$TV_HOST tools/theme.sh themes/cinematic
 # 5. Restore if ever needed
 tools/restore.sh examples/sony-kd-49x8200e/debloat.txt
 ```
+

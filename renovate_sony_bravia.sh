@@ -102,3 +102,4 @@ echo ""
 echo "To restore everything back to factory defaults at any time, run:"
 echo "  tools/restore.sh examples/sony-kd-49x8200e/debloat.txt"
 echo "====================================================================="
+
